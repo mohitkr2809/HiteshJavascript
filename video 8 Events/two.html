@@ -7,25 +7,29 @@
 </head>
 <body>
     <h1>Chai aur code</h1>
-    <button id="stop">stop</button>
+    <button id="stop">Stop</button>
 </body>
 <script>
     const sayHitesh = function(){
         console.log("Hitesh");
     }
-    sayHitesh();
     const changeText = function(){
-        document.querySelector('h1').innerHTML = "best JS series"
-    }
+        document.querySelector('h1').innerHTML
+    = "best JS series"
+    } 
 
-    const changeMe = setTimeout(changeText, 2000)
+    const changeme = setTimeout(changeText, 
+    2000)
 
-    document.querySelector("#stop").addEventListener('click', function(){
-        clearTimeout(changeMe)
+    document.querySelector('#stop').
+    addEventListener('click', function(){
+        clearTimeout(changeme)
         console.log("STOPPED")
     })
+    
+    
+
+
+
 </script>
 </html>
-        
-
-    
